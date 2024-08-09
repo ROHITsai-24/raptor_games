@@ -1,0 +1,44 @@
+<!-- <div class="row">
+    <div class="card-container" *ngFor="let w of wishlist_list">
+        <div class="col-md-12">
+        <div class="card-image" style="background-image: url('final shape.jpeg');">
+            <div class="hover-content">
+            </div>
+        </div>
+        <div class="card-body">
+            <p class="base-game">Base Game</p>
+            <h5 class="card-title">Horizon Forbidden West™ Complete Edition</h5>
+            <div class="price-details">
+            <span class="discount">-20%</span>
+            <span class="original-price">₹3,999</span>
+            <span class="discounted-price">₹3,199.20</span>
+            </div>
+        </div>
+        <button class="btn btn-primary" (click)="cart(w)" >add to cart</button>
+        </div>
+    </div>
+ </div>    -->
+ <div class="row">
+    <div class="col-md-12">
+        <h2 class="section-title">Wishlist</h2>
+    </div>
+    <div class="card-container" *ngFor="let w of wishlist_list">
+    <div class="col-md-12 col-12">
+        <div class="card-image">
+            <img [src]="w.image" alt="{{ w.game_title }}">
+            <div class="hover-content">
+            </div>
+        </div>
+        <div class="card-body">
+            <p class="base-game">{{ w.category }}</p>
+            <h5 class="card-title">{{ w.game_title }}</h5>
+            <div class="price-details">
+            <span class="discount">{{ w.discount }}</span>
+            <span class="original-price">₹3,999</span>
+            <span class="discounted-price">{{ w.price }}</span>
+            </div>
+        </div>
+        <button class="add-to-cart-btn" (click)="cart(w)" >add to cart</button>
+    </div>
+    </div>
+</div>

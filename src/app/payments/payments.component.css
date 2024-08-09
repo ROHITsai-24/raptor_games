@@ -1,0 +1,207 @@
+    /* .payments-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #101014;
+        color: white;
+    }
+    
+    .checkout-column, .order-summary-column {
+        width: 48%;
+        padding: 20px;
+        background-color: #1c1c1e;
+        border-radius: 10px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .payment-method {
+        margin-bottom: 20px;
+    }
+    
+    .payment-method label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .payment-details input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #3a3a3c;
+        background-color: #2c2c2e;
+        color: white;
+    }
+    
+    .order-summary-column .order-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .order-summary-column .order-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+    
+    .item-details h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .item-details .price, .item-details .discount-price {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .total p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .creator-code input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #3a3a3c;
+        background-color: #2c2c2e;
+        color: white;
+    }
+    
+    .agree-terms label {
+        font-size: 14px;
+    }
+    
+    .agree-terms input {
+        margin-right: 10px;
+    }
+    
+    .place-order-btn {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: #007bff;
+        color: white;
+    }
+     */
+
+     .payments-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #101014;
+        color: white;
+    }
+    
+    .checkout-column, .order-summary-column {
+        width: 48%;
+        padding: 20px;
+        background-color: #1c1c1e;
+        border-radius: 10px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .payment-method {
+        margin-bottom: 20px;
+    }
+    
+    .payment-method label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .payment-details input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #3a3a3c;
+        background-color: #2c2c2e;
+        color: white;
+    }
+    
+    .order-summary-column .order-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .order-summary-column .order-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+    
+    .item-details h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .price-details .price, .price-details .discount-price {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .total p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .creator-code input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #3a3a3c;
+        background-color: #2c2c2e;
+        color: white;
+    }
+    
+    .agree-terms label {
+        font-size: 14px;
+    }
+    
+    .agree-terms input {
+        margin-right: 10px;
+    }
+    
+    .place-order-btn {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: #007bff;
+        color: white;
+    }
+    /* header */
+    .section-title {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+/* alert styles */
+/* In your CSS file */

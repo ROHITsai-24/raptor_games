@@ -1,0 +1,36 @@
+<br><br>
+<div class="row">
+    <div class="col-md-4">
+        <form action="" [formGroup]="productform" (ngSubmit)="addme()" class="black-theme-form">
+            <div class="inputGroup form-group">
+                <input type="text" required="" class="form-control" formControlName="id" autocomplete="off">
+                <label for="id">Id</label>
+            </div>
+            <div class="inputGroup form-group">
+                <input type="text" required="" class="form-control" formControlName="game_title" autocomplete="off">
+                <label for="title">Game Title</label>
+            </div>
+            <div class="inputGroup form-group">
+                <input type="text" required="" class="form-control" formControlName="price" autocomplete="off">
+                <label for="price">Price</label>
+            </div>
+            <div class="inputGroup form-group">
+                <input type="text" required="" class="form-control" formControlName="description" autocomplete="off">
+                <label for="description">Description</label>
+            </div>
+            <div class="inputGroup form-group">
+                <input type="text" required="" class="form-control" formControlName="category" autocomplete="off">
+                <label for="category">Category</label>
+            </div>
+            <div class="inputGroup form-group">
+                <input type="text" required="" class="form-control" formControlName="image" autocomplete="off">
+                <label for="image">Image link</label>
+            </div>
+            <div class="form-group" align="center"> 
+                <button class="btn btn-success" type="submit">Add Game</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

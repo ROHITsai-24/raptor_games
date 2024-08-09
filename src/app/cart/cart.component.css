@@ -1,0 +1,127 @@
+.card-container {
+  max-width: 250px;
+  margin: 20px;
+}
+
+.card {
+  position: relative;
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hover-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card-image:hover .hover-content {
+  opacity: 1;
+}
+
+.add-to-cart-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.card-body {
+  padding: 15px;
+  background-color: #101014;
+  text-align: center;
+}
+
+.base-game {
+  font-size: 12px;
+  color: #ababac;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.price-details {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.discount {
+  color: red;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #ababac;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+} 
+
+/* header */
+.section-title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+/* buy now button */
+.add-to-cart-btn {
+  background-color: #101014; /* Matching background color */
+  border: 2px solid #ffffff; /* White border */
+  color: #ffffff; /* White text color */
+  border-radius: 50px; /* Rounded button */
+  padding: 10px 20px; /* Padding for button */
+  font-size: 14px; /* Font size */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  display: block; /* Display block to take the full width */
+  width: 100%; /* Full width */
+  text-align: center; /* Center text */
+  margin-top: 10px; /* Margin on top */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #101014; /* Dark text color on hover */
+  border: 2px solid #101014; /* Dark border on hover */
+}

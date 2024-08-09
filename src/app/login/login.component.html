@@ -1,0 +1,98 @@
+<div class="section bg-theme-color-light overlay-dark overlay-opacity-8 bg-cover lazy" data-loaded="true" style="background-image: url(https://bootdey.com/img/Content/bg1.jpg);">
+    <div class="container"> 
+        <div class="row text-center-md text-center-xs d-middle justify-content-start">
+            
+            <div class="col-12 col-lg-6 mb-5 text-white aos-init aos-animate matter" data-aos="fade-in" data-aos-delay="0" data-aos-offset="0">
+                <!-- main title -->
+                <h1 class="display-4 fw-bold mb-0">
+                    <span class="d-inline-block">
+                        <span class="h6 fw-normal d-block text-align-end text-center-xs">
+                    
+                        </span>
+                        <span class="container"><img class="logo" src="logo.png" alt="" height="450px" width="450px"></span> 
+                    </span>
+                </h1>
+                
+                <!-- slogan -->
+                <p class="h3 fw-normal mb-0z quote">
+                    Unleash Your Adventure
+                </p>
+            </div>
+            <div class=" box col-12 col-lg-6 block text-align-end text-center-md text-center-xs aos-init aos-animate" data-aos="fade-in" data-aos-delay="50" data-aos-offset="0">
+                <div class="d-inline-block  shadow-primary-xs rounded p-4 p-md-5 w-100 max-w-450 text-align-start box2">
+                    
+                    <h2 class="h1 mb-5" align="center">
+                        <i class="fi fi-homeadvisor"></i> 
+                        <span class="d-inline-block px-2">SIGN IN</span>
+                    </h2>
+                    <form novalidate="" class="bs-validate" method="get" action="#" [formGroup]="loginform">
+                        <div class="form-floating mb-3">
+                            <input placeholder="Username" id="s_address" type="text" value="" class="form-control input" formControlName="username">
+                            <label class="label" for="s_address">Username</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input placeholder="Password" id="s_address" type="password" value="" class="form-control input"  formControlName="password">
+                            <label class="label" for="s_address">Password</label>
+                        </div>
+                        <button type="submit" class="btn w-100 btn-lg btn-singin" (click)="checklogin()">
+                            <i class="fi fi-search"></i>
+                            Sign in
+                        </button>
+
+                        <br><br>
+                        <p class="hr-lines h">or sign in with</p>
+                        <div class="other">
+                        <img src="google.png" alt="" height="40px" width="40px">
+                        <img src="facebook.png" alt="" height="40px" width="40px">
+                        <img src="xbox.png" alt="" height="40px" width="40px">
+                        <img src="apple.png" alt="" height="40px" width="40px">
+                        </div>
+                        <br><br>
+                        <p align="center" class="footer">Dont have an account? </p>
+                        <p align="center" data-bs-target="#mymodal" data-bs-toggle="modal"><a routerLink="" class="create">create new account</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content black-theme">
+            <div class="modal-header">
+                <h1 class="modal-title">Sign up</h1>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" ngNativeValidate>
+                    <div class="form-group">
+                        <label for="" class="form-label">Username</label>
+                        <input type="text" class="form-control" placeholder="Username" pattern="[a-zA-Z]{5,}" [(ngModel)]="username" name="uname">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Password</label>
+                        <input type="text" class="form-control" placeholder="Password" pattern="[a-zA-Z0-9]{8,}" [(ngModel)]="password" name="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Confirm Password</label>
+                        <input type="text" class="form-control" placeholder="Confirm Password" [(ngModel)]="confirmpassword" name="cpwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter Email" [(ngModel)]="email" name="emi">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Contact Number</label>
+                        <input type="text" class="form-control" placeholder="Contact Number" pattern="[0-9]{10}" [(ngModel)]="contact" name="num">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" (click)="signup()">Create Account</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+

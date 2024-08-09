@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="section-title">Library</h2>
+    </div>
+    <div class="card-container" *ngFor="let p of librarylist">
+    <div class="col-md-12 col-12">
+        <div class="card-image">
+            <img [src]="p.image" alt="{{ p.game_title }}">
+            <div class="hover-content">
+            </div>
+        </div>
+        <div class="card-body">
+            <p class="base-game">{{ p.category }}</p>
+            <h5 class="card-title">{{ p.game_title }}</h5>
+            <div class="price-details">
+            <span class="original-price"><i class="fa-solid fa-download"></i>download now</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

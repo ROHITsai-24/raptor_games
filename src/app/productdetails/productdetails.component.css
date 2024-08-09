@@ -1,0 +1,201 @@
+    .game-view-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #101014;
+        color: white;
+    }
+    
+    .game-view-content {
+        width: 65%;
+    }
+    
+    .game-title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .game-overview {
+        font-size: 18px;
+        color: #ababac;
+        margin-bottom: 20px;
+    }
+    
+    .game-main-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .game-main-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .game-description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .game-sidebar {
+        width: 30%;
+        background-color: #1c1c1e;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .game-sidebar-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .game-sidebar-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .base-game {
+        font-size: 14px;
+        color: #ababac;
+        margin-bottom: 20px;
+    }
+    
+    .price-details {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .discount {
+        color: red;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .original-price {
+        text-decoration: line-through;
+        color: #ababac;
+        margin-bottom: 5px;
+    }
+    
+    .discounted-price {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .buy-now-btn, .add-to-cart-btn {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    
+    .buy-now-btn {
+        background-color: #007bff;
+        color: white;
+    }
+    
+    .add-to-cart-btn {
+        background-color: #6c757d;
+        color: white;
+    }
+    
+    
+    /* .order-summary-column .order-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .order-summary-column .order-item img {
+        width: 80px;
+        height: 80px;*
+        border-radius: 10px;
+        margin-right: 20px;
+    } */
+    
+    /* .sidebar-image {
+        width: 100%;
+        height: auto;
+        max-width: 400px;     
+    }
+     */
+/* features */
+.features-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    color: #ababac;
+}
+
+.features-list li {
+    width: 45%; /* Adjust width to fit two items per line */
+    margin-bottom: 10px;
+    margin-right: 5%; /* Space between items */
+    box-sizing: border-box;
+}
+
+.features-list li:nth-child(2n) {
+    margin-right: 0; /* Remove right margin for the second item in each row */
+}
+
+.rating-section {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.rating-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background-color: #ffc107; /* Star color */
+    clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+    ); /* Star shape */
+}
+
+
+.rating-score {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* .platform {
+    font-size: 14px;
+    color: #ababac;
+    margin-top: 10px;
+} */

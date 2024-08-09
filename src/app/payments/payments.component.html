@@ -1,0 +1,54 @@
+<div class="col-md-12">
+    <h2 class="section-title">Payment gateway</h2>
+</div>
+<div class="payments-container">
+    <div class="checkout-column">
+        <h2>Checkout</h2>
+        <form>
+            <div class="payment-method">
+                <label>
+                    <input type="radio" name="payment-method" value="credit-card" checked>
+                    Credit Card
+                </label>
+                <div class="payment-details">
+                    <input type="text" placeholder="Card Number">
+                    <input type="text" placeholder="Name on Card">
+                    <input type="text" placeholder="Expiration Date (MM/YY)">
+                    <input type="text" placeholder="CVV">
+                </div>
+            </div>
+            <div class="payment-method">
+                <label>
+                    <input type="radio" name="payment-method" value="paypal">
+                    PayPal
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="order-summary-column">
+        <h2>Order Summary</h2>
+        <div class="order-item">
+            <img [src]="p.image" alt="Game Thumbnail">
+            <div class="item-details">
+                <h3>{{ p.game_title }}</h3>
+            </div>
+        </div>
+        <div class="price-details">
+            <p class="price">Original Price: ₹4000</p>
+            <p class="discount-price">Discount Price: {{ p.price }}</p>
+        </div>
+        <div class="total">
+            <p>Total: {{ p.price }}</p>
+        </div>
+        <div class="creator-code">
+            <input type="text" placeholder="Enter Creator Code">
+        </div>
+        <div class="agree-terms">
+            <label>
+                <input type="checkbox" [(ngModel)]="agreeTerms">
+                I agree to the terms and conditions.
+            </label>
+        </div>
+        <button class="place-order-btn" (click)="placeorder()" [disabled]="!agreeTerms">Place Order</button>
+    </div>
+</div>

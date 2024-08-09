@@ -1,0 +1,159 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="section-title">Top New Releases</h2>
+    </div>
+    <div class="col-md-4" *ngFor="let p of productlist">
+        <div class="card custom-card">
+            <div class="card-header custom-card-header">
+                <img src="{{p.image}}" alt="" class="product-image">
+                <span class="product-title">{{p.game_title}}</span>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="!p.pflag">
+                <p class="m-b-0">Price: {{p.price}}</p>
+                <p class="m-b-0">{{p.description}}</p>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="p.pflag">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.game_title">
+                <label class="form-label">Price</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.price">
+                <label class="form-label">Description</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.description">
+            </div>
+            <div class="card-footer custom-card-footer">
+                <button class="btn btn-success" *ngIf="!p.pflag" (click)="editcontent(p)">Edit</button> 
+                <button class="btn btn-primary" *ngIf="p.pflag" (click)="updateme(p)">Update</button>
+                <button class="btn btn-danger" (click)="deleteme(p.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- trending -->
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="section-title">Trending</h2>
+    </div>
+    <div class="col-md-4" *ngFor="let p of productlist2">
+        <div class="card custom-card">
+            <div class="card-header custom-card-header">
+                <img src="{{p.image}}" alt="" class="product-image">
+                <span class="product-title">{{p.game_title}}</span>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="!p.pflag">
+                <p class="m-b-0">Price: {{p.price}}</p>
+                <p class="m-b-0">{{p.description}}</p>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="p.pflag">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.game_title">
+                <label class="form-label">Price</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.price">
+                <label class="form-label">Description</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.description">
+            </div>
+            <div class="card-footer custom-card-footer">
+                <button class="btn btn-success" *ngIf="!p.pflag" (click)="editcontent(p)">Edit</button> 
+                <button class="btn btn-primary" *ngIf="p.pflag" (click)="updateme(p)">Update</button>
+                <button class="btn btn-danger" (click)="deleteme(p.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- discover something new -->
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="section-title">Discover something new</h2>
+    </div>
+    <div class="col-md-4" *ngFor="let p of productlist4">
+        <div class="card custom-card">
+            <div class="card-header custom-card-header">
+                <img src="{{p.image}}" alt="" class="product-image">
+                <span class="product-title">{{p.game_title}}</span>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="!p.pflag">
+                <p class="m-b-0">Price: {{p.price}}</p>
+                <p class="m-b-0">{{p.description}}</p>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="p.pflag">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.game_title">
+                <label class="form-label">Price</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.price">
+                <label class="form-label">Description</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.description">
+            </div>
+            <div class="card-footer custom-card-footer">
+                <button class="btn btn-success" *ngIf="!p.pflag" (click)="editcontent(p)">Edit</button> 
+                <button class="btn btn-primary" *ngIf="p.pflag" (click)="updateme(p)">Update</button>
+                <button class="btn btn-danger" (click)="deleteme(p.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- most popular -->
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="section-title">Most popular</h2>
+    </div>
+    <div class="col-md-4" *ngFor="let p of productlist5">
+        <div class="card custom-card">
+            <div class="card-header custom-card-header">
+                <img src="{{p.image}}" alt="" class="product-image">
+                <span class="product-title">{{p.game_title}}</span>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="!p.pflag">
+                <p class="m-b-0">Price: {{p.price}}</p>
+                <p class="m-b-0">{{p.description}}</p>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="p.pflag">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.game_title">
+                <label class="form-label">Price</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.price">
+                <label class="form-label">Description</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.description">
+            </div>
+            <div class="card-footer custom-card-footer">
+                <button class="btn btn-success" *ngIf="!p.pflag" (click)="editcontent(p)">Edit</button> 
+                <button class="btn btn-primary" *ngIf="p.pflag" (click)="updateme(p)">Update</button>
+                <button class="btn btn-danger" (click)="deleteme(p.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- recently added -->
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="section-title">Recently added</h2>
+    </div>
+    <div class="col-md-4" *ngFor="let p of productlist6">
+        <div class="card custom-card">
+            <div class="card-header custom-card-header">
+                <img src="{{p.image}}" alt="" class="product-image">
+                <span class="product-title">{{p.game_title}}</span>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="!p.pflag">
+                <p class="m-b-0">Price: {{p.price}}</p>
+                <p class="m-b-0">{{p.description}}</p>
+            </div>
+            <div class="card-body custom-card-body" *ngIf="p.pflag">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.game_title">
+                <label class="form-label">Price</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.price">
+                <label class="form-label">Description</label>
+                <input type="text" class="form-control black-input" [(ngModel)]="p.description">
+            </div>
+            <div class="card-footer custom-card-footer">
+                <button class="btn btn-success" *ngIf="!p.pflag" (click)="editcontent(p)">Edit</button> 
+                <button class="btn btn-primary" *ngIf="p.pflag" (click)="updateme(p)">Update</button>
+                <button class="btn btn-danger" (click)="deleteme(p.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+

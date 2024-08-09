@@ -1,0 +1,41 @@
+<div  class="home">
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box side" id="navigation">
+                <div class="logo">
+                </div>
+                <div class="navi" style="background-color: #101014;">
+                    <ul>
+                        <li><a routerLink="/user/products" routerLinkActive="router-link-active"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Store</span></a></li>
+                        <li><a routerLink="/user/library" routerLinkActive="router-link-active"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Library</span></a></li>
+                        <li><a routerLink="/user/sellproduct" routerLinkActive="router-link-active"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Sell games</span></a></li>
+                        <li><a href="javascript:void(0);" (click)="sweet()"><i class="fa fa-gamepad" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Manage Games</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                        <div class="col-md-12 topnav">
+                            <nav class="navbar navbar-expand navbar-dark navside" style="background-color:#101014 ;" >
+                                <div class="container-fluid " >
+                                    <ul class="navbar-nav ">
+                                        <li class="navbar-brand" ><a routerLink="/user/home" class="nav-link">Raptor Games</a></li>
+                                        <div class="nav-top">
+                                        
+                                        <li><a routerLink="/user/cart"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Cart<span *ngIf="cartlen > 0" class="badge badge-custom">{{cartlen}}</span></span></a></li>
+                                        <li><a routerLink="/user/wishlist"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Wishlist</span></a></li>
+                                        <li><a routerLink="/" (click)="logout()"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Logout</span></a></li>
+                                    </div>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-md-10 cards">
+                            <br><br><br>
+                            <router-outlet></router-outlet>
+                        </div>
+                        
+            </div>
+        </div>
+    </div>
+    
+    
