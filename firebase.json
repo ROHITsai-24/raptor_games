@@ -1,0 +1,19 @@
+{
+  "dataconnect": {
+    "source": "dataconnect"
+  },
+  "hosting": {
+    "public": "dist/raptorgames",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

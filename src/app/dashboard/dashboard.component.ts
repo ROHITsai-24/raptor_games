@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { CartService } from '../service/cart.service';
 import Swal from 'sweetalert2';
@@ -7,7 +7,8 @@ import { AuthserviceService } from '../service/authservice.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.css'],
+  encapsulation: ViewEncapsulation.Emulated // or ViewEncapsulation.None for global CSS
 })
 export class DashboardComponent {
   checkuser: any;
